@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Event Ticket Scanner",
+    "slug": "event-ticket-scanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eventticket.scanner"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.eventticket.scanner",
+      "permissions": [
+        "CAMERA"
+      ],
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "pan",
+      "windowSoftInputMode": "adjustResize"
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow Event Ticket Scanner to access your camera to scan QR codes."
+        }
+      ],
+      "expo-screen-orientation"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "event-ticket-scanner"
+      }
+    }
+  }
+}
