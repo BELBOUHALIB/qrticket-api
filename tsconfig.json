@@ -3,6 +3,9 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["dom", "esnext"],
+    "scripts": {
+    "build": "tsc && node fix-dist-imports.js"
+     }
     "jsx": "react-jsx",         // ✅ OBLIGATOIRE pour JSX
     "moduleResolution": "node",
     "esModuleInterop": true,

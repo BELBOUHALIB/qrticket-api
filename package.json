@@ -48,6 +48,7 @@
     "dev": "vite",
     "server": "ts-node server.ts",
     "start": "node dist/server.js",
-    "build": "tsc"
+    "build": "tsc && node fix-dist-imports.js"
+
   }
 }

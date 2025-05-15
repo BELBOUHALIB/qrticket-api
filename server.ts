@@ -4,7 +4,7 @@ import * as mysql from 'mysql2/promise';
 import * as path from 'path';
 import * as fs from 'fs';
 import * as QRCode from 'qrcode';
-import { generateTicketPDF } from './src/utils/ticketPDF';
+import { generateTicketPDF } from './utils/ticketPDF.js';
 import { v4 as uuidv4 } from 'uuid';
 
 
